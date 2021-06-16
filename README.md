@@ -15,7 +15,7 @@ Ballet Dancer Back Biomechanics Analysis using SPM1D and Pattern Recognition
 a) In Back Biomechanics, there are text files that I used to document all of my testing procedure
 
 b) FM, Rotation, and Walking all have the following:
-- I did not copy the Data folders contain original excel data
+- I did not copy the Data folders that contains original excel data
 - Stats folders contain output of matlab t-tests
 - MAT folders contain all functions/matlab files used to create T-test results (I took out some dataset files because it was too big)
  
