@@ -4,13 +4,9 @@ Ballet Dancer Back Biomechanics Analysis using SPM1D and Pattern Recognition
 1. spm1dmatlab-master - the spm directory for matlab
 -should be part of the path when working with spm in matlab
 
-2. spm1d-master - the spm directory for python
+2. literature - a few articles/notes I considered beforehand
 
-3. spm12 - the neuroimaging software
-
-4. literature - a few articles/notes I considered beforehand
-
-5. Back Biomechanics - contains all notes/excel files/matlab files used for the study
+3. Back Biomechanics - contains all notes/excel files/matlab files used for the study
 
 a) In Back Biomechanics, there are text files that I used to document all of my testing procedure
 
