@@ -1,0 +1,62 @@
+EMG signal analysis
+
+EMG signal detection issues:
+1. signal to noise ratio
+2. distortion (relative contribution of frequency)
+
+Maximization of quality of EMG signal:
+1. signal to noise ratio contains highest amount of info from EMG signal and minimumm noise
+2. distortion must be minimal 
+
+Electrical noise affecting EMG signals:
+1. Inherent noise in electronics equipment
+2. Ambient noise
+3. Motion artifact
+4. Inherent instability of signal
+
+Factors affecting EMG signals:
+1. Causative factors
+--extrinsic
+--intrinsic
+2. Intermediate factors (influenced by causative factors)
+3. Deterministic factors (influenced by intermediate factors)
+
+Math models:
+wavelet transform
+time-frequency approaches
+fourier transform
+*wigner-ville distribution
+statistical measures
+higher-order stat
+
+AI models:
+Artificial neural networks
+Dynamic recurrent neural networks
+fuzzy logic
+Genetic algorithm
+
+EMG signal decomposition:
+-wavelet spectrum matching and PCA of wavelet coefficients
+--Decomposition algorithm has 4 processing stages: segmentation, wavelet transform, PCA, clustering
+-nonlinear least mean square optimiztion of higher order cumulants
+
+EMG signal processing:
+
+1. Wavelet analysis
+
+2. Time-frequency approach
+
+3. Autoregressive model (AR)
+
+4. Artificial Neural Networks
+
+5. Higher-order statistics (estimation, normality)
+
+Summary:
+Decomposition of EMG signal by wavelet spectrum matching shows that the technique is accurate, reliable, and fast
+nonlinear LMS optimization decomposition method based on HOS is also reliable in a noiseless case
+FFT?
+
+
+Chris Swain:
+SS p<.05, ind t-tests, shapiro-wilk, levene's test, 2way anova, no posthoc, partial eta squared

@@ -1,0 +1,52 @@
+1. p.373: EEG Mismatch negativity data (mmn)
+-Data recorded with Biosemi system at 128 scalp electrodes and sampling rate of 512hz
+-Vert/horiz eye movements monitored using EOG electrodes
+
+Preprocessing:
+-Conversion
+--Select EEG channels used in experiment
+-Montage
+--derive vertical/horizontal EOG channels by subtracting pairs of channels located above/below the eye and below/lateral to the eye respectively
+--also changes recording reference to be the average of all EEG channels
+-Prepare
+--link the data to sensors which are located in a coordinate system
+-High-pass filter
+--removes unwanted frequency bands from data (for evoked response analysis, high frequencies are assumed to carry noise)
+--highpass filter removes ultra-low frequencies close to DC
+--lowpass filter removes high frequencies
+--filter prior to downsampling because high amp baseline shifts will generate filtering artefacts
+-Downsampling
+--lower an unnecessarily high sampling rate for evoked response analysis 
+-Epoch
+--specific time-windows are extracted from the continuous EEG signal (time windows are called epochs)
+-Artefact removal
+--remove unwanted noise
+--using threshold channels
+---mark trials in which signal recorded exceed threshold as artifacts
+-Averaging
+--to produce an ERP
+--robust averaging, compute weight by conditions
+
+Sensor space analysis
+-using Random Field theory to correct for multiple statistical comparisons across N-dimensional spaces
+
+Source reconstruction
+-Create mesh
+-Coregistration (linking the coordinate system of sensors to the image)
+-Forward model (computing for each of the dipoles the effect it would have on sensors)
+-Inverse reconstruction (MIP displayed)
+
+Dynamic Causal Modeling
+-DCM for ERP fits a neural network model to EEG data, in which activity in source regions is described using DEs based on neural mass models
+-Data specification, specification of electromagnetic model, specification of neuronal model
+
+2. p.403: Multimodal, Multisubject data fusion
+-data too big to download
+
+3. p.273: Face group fMRI data (face_rfx)
+
+
+4. p.343: DCM Bayesian model inference (dcm_bms)
+
+5. p.245: Face fMRI data (face_rep)
+
